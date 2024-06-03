@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/navBar.css";
+import { language } from "../../data/languagePage";
 
 const NavBar = (props) => {
 	const { active } = props;
@@ -19,7 +20,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/">Home</Link>
+								<Link to="/">{language.home.fr}</Link>
 							</li>
 							<li
 								className={
@@ -28,7 +29,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/about">About</Link>
+								<Link to="/about">{language.about.fr}</Link>
 							</li>
 							<li
 								className={
@@ -37,17 +38,17 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/projects">Projects</Link>
+								<Link to="/projects">{language.projects.fr}</Link>
 							</li>
-							<li
+							{/* <li
 								className={
 									active === "articles"
 										? "nav-item active"
 										: "nav-item"
 								}
 							>
-								<Link to="/articles">Articles</Link>
-							</li>
+								<Link to="/articles">{language.articles.fr}</Link>
+							</li> */}
 							<li
 								className={
 									active === "contact"
@@ -55,7 +56,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/contact">Contact</Link>
+								<Link to="/contact">{language.contact.fr}</Link>
 							</li>
 						</ul>
 					</div>

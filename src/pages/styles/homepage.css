@@ -71,24 +71,42 @@
 
 .homepage-after-title {
 	display: flex;
+	padding-top: 40px;
 }
 
 .homepage-projects {
 	flex-basis: 300px;
-	padding-top: 40px;
+}
+
+.homepage-articles-header-title {
+	flex-basis: 900px;
+	padding-top: 30px;
+	margin-left: -30px;
+	
+	color: var(--secondary-color);
+	font-size: 14px;
+	padding-left: 20px;
+	font-weight: 650;
+	
+	align-items: center;
+}
+
+.homepage-articles-header-icon {
+	color: var(--tertiary-color);
+	margin-right: 20px;
 }
 
 .homepage-articles {
 	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
+	padding-top: 10px;
+	margin-left: -10px;
 }
 
 .homepage-article {
 	padding-bottom: 5px;
 }
 
-.homepage-works {
+.homepage-fromations {
 	flex-basis: 600px;
 	padding-top: 30px;
 }
@@ -142,7 +160,7 @@
 		flex-basis: auto;
 	}
 
-	.homepage-works {
+	.homepage-fromations {
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;

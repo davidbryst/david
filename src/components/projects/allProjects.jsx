@@ -5,6 +5,7 @@ import Project from "./project";
 import INFO from "../../data/user";
 
 import "./styles/allProjects.css";
+import Design from "./design";
 
 const AllProjects = () => {
 	return (
@@ -14,9 +15,10 @@ const AllProjects = () => {
 					<Project
 						logo={project.logo}
 						title={project.title}
+						type={project.type}
 						description={project.description}
 						linkText={project.linkText}
-						link={project.link}
+						link={"/project/" + (index + 1)}
 					/>
 				</div>
 			))}

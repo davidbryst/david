@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
@@ -13,15 +13,17 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
-import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import Fromations from "../components/homepage/formation";
+import { language } from "../data/languagePage";
+import Work from "../components/homepage/work";
+
+import myWorks from "../data/works";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -92,11 +94,11 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									{INFO.homepage.title.fr}
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									{INFO.homepage.description.fr}
 								</div>
 							</div>
 
@@ -104,7 +106,8 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											// src="homepage.jpg"
+											src="_ME3.jpeg"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -166,31 +169,37 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
 
 						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
+							<div>
+								<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faBriefcase} /> {language.work.fr}</div>
+								<div className="homepage-articles">
+									{myWorks.map((work, index) => (
+										<div
+											className="homepage-article"
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
+										>
+											<Work
+												key={(index + 1).toString()}
+												img={work().img}
+												dateStart={work().dateStart}
+												dateEnd={work().dateEnd}
+												company={work().company}
+												workstation={work().workstation}
+												description={work().description}
+											/>
+										</div>
+									))}
+								</div>
 							</div>
 
-							<div className="homepage-works">
-								<Works />
+							<div className="homepage-fromations">
+								<Fromations />
 							</div>
+						</div>
+
+						<div className="homepage-projects">
+							<AllProjects />
 						</div>
 
 						<div className="page-footer">

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/footer.css";
+import { language } from "../../data/languagePage";
 
 const Footer = () => {
 	return (
@@ -10,26 +11,26 @@ const Footer = () => {
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li className="footer-nav-link-item">
-							<Link to="/">Home</Link>
+							<Link to="/">{language.home.fr}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/about">About</Link>
+							<Link to="/about">{language.about.fr}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/projects">Projects</Link>
+							<Link to="/projects">{language.projects.fr}</Link>
 						</li>
+						{/* <li className="footer-nav-link-item">
+							<Link to="/articles">{language.articles.fr}</Link>
+						</li> */}
 						<li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
-						</li>
-						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
+							<Link to="/contact">{language.contact.fr}</Link>
 						</li>
 					</ul>
 				</div>
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
+						© 2024 dbryst. All Rights Reserved.
 					</div>
 				</div>
 			</div>

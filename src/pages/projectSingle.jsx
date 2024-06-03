@@ -11,7 +11,7 @@ import SEO from "../data/seo";
 
 import "./styles/contact.css";
 
-const Contact = () => {
+const ProjectSingle = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -100,4 +100,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default ProjectSingle;

@@ -41,11 +41,11 @@ const Articles = () => {
 
 					<div className="articles-main-container">
 						<div className="title articles-title">
-							{INFO.articles.title}
+							{INFO.articles.title.fr}
 						</div>
 
 						<div className="subtitle articles-subtitle">
-							{INFO.articles.description}
+							{INFO.articles.description.fr}
 						</div>
 
 						<div className="articles-container">
