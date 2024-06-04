@@ -53,7 +53,7 @@ const About = () => {
 								</div>
 								
 								<div>
-									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faPen} /> competences graphiques</div>
+									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faPen} /> compétences graphiques</div>
 									<div className="subtitle about-subtitle">
 										{INFO.graphicSkills.map((skill) => (
 											<div className="about-skills-indicater">
@@ -64,7 +64,7 @@ const About = () => {
 								</div>
 
 								<div>
-									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faBriefcase} /> competences full-stack web et mobiles </div>
+									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faBriefcase} /> compétences full-stack web et mobiles </div>
 									<div className="subtitle about-subtitle">
 										{INFO.skills.map((skill) => (
 											<div className="about-skills-indicater1">

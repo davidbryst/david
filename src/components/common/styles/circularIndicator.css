@@ -30,8 +30,8 @@
 
 .circle-bg { 
     fill: none; 
-    stroke: var(--primary-color); 
     stroke-width: 4.5; 
+    stroke: #eee; 
 }
 
 .circle { 
@@ -42,7 +42,7 @@
 }
 
 .circular-chart.orange .circle { 
-    stroke: #eee; 
+    stroke: var(--primary-color); 
 }
 
 .percentage { 

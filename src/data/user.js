@@ -83,6 +83,11 @@ const INFO = {
 			percent: 80,
 		},
 		{
+			title: "Figma ",
+			icon: "/figma.png",
+			percent: 80,
+		},
+		{
 			title: "After Effects",
 			icon: "/ae.png",
 			percent: 50,
