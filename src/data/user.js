@@ -40,7 +40,7 @@ const INFO = {
 	},
 
 	project: {
-		title: {en:"Things I’ve made trying to put my dent in the universe.", fr: "Des choses que j’ai faites en essayant de faire ma différence dans l’univers."},
+		title: {en:"I have worked on a variety of projects over the years and I am proud to present them to you.", fr: "J'ai travaillé sur une variété de projets au fil des années et je suis fier de vous les presenter."},
 		description:{
 			fr: "J'ai travaillé sur une variété de projets au fil des années et je suis fier des progrès que j'ai réalisés. Beaucoup de ces projets sont open source et peuvent être explorés par d’autres et auxquels ils peuvent contribuer. Si vous êtes intéressé par l'un des projets sur lesquels j'ai travaillé, n'hésitez pas à consulter le code et à suggérer toute amélioration ou amélioration que vous pourriez avoir en tête. Collaborer avec les autres est une excellente façon d'apprendre et de grandir, et je suis toujours ouvert aux nouvelles idées et aux commentaires.",
 			en: "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",

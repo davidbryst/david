@@ -11,24 +11,12 @@ import {
 import INFO from "../../data/user";
 
 import "./styles/socials.css";
+import { DownloadLink } from "../common/downloadLink";
 
 const Socials = () => {
 	return (
 		<div className="socials">
-			
-			<div className="social">
-				<a
-					href={`mailto:${INFO.main.email}`}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon icon={faFile} />
-					</div>
-
-					<div className="social-text">Telecharger CV</div>
-				</a>
-			</div>
+			<DownloadLink url={"https://drive.google.com/file/d/1mOxsX4C7019r99-d7G2GU7wsbULky4_h/view?usp=drive_link"} fileName={"DAVID Abraham CV.pdf"} />
 			<div className="email">
 				<div className="email-wrapper">
 					<a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
