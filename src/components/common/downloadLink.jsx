@@ -1,5 +1,4 @@
 import React from "react";
-import INFO from "../../data/user";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
