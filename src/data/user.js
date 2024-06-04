@@ -39,6 +39,14 @@ const INFO = {
 		}
 	},
 
+	project: {
+		title: {en:"Things I’ve made trying to put my dent in the universe.", fr: "Des choses que j’ai faites en essayant de faire ma différence dans l’univers."},
+		description:{
+			fr: "J'ai travaillé sur une variété de projets au fil des années et je suis fier des progrès que j'ai réalisés. Beaucoup de ces projets sont open source et peuvent être explorés par d’autres et auxquels ils peuvent contribuer. Si vous êtes intéressé par l'un des projets sur lesquels j'ai travaillé, n'hésitez pas à consulter le code et à suggérer toute amélioration ou amélioration que vous pourriez avoir en tête. Collaborer avec les autres est une excellente façon d'apprendre et de grandir, et je suis toujours ouvert aux nouvelles idées et aux commentaires.",
+			en: "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+		}
+	},
+
 	contact: {
 		title: {en:"Let's Get in Touch.", fr: "Prenons contact."},
 		description:{
@@ -53,6 +61,86 @@ const INFO = {
 		}
 	},
 
+	graphicSkills: [
+		{
+			title: "Illustrator ",
+			icon: "/ai.png",
+			percent: 90,
+		},
+		{
+			title: "Photoshop",
+			icon: "/ps.png",
+			percent: 50,
+		},
+		{
+			title: "Indesign",
+			icon: "/id.png",
+			percent: 60,
+		},
+		{
+			title: "XD ",
+			icon: "/xd.png",
+			percent: 80,
+		},
+		{
+			title: "After Effects",
+			icon: "/ae.png",
+			percent: 50,
+		},
+		{
+			title: "Canva",
+			icon: "/canva.jpeg",
+			percent: 70,
+		},
+		{
+			title: "Blender",
+			icon: "/blender.png",
+			percent: 60,
+		},
+	],
+	skills: [
+		{	
+			title: "React.js",
+			icon: "/react1.png",
+			percent: 0,
+		},
+		{	
+			title: "expo.js",
+			icon: "/expo.png",
+			percent: 0,
+		},
+		{	
+			title: "Node.js (Express.js)",
+			icon: "/node.png",
+			percent: 0,
+		},
+		{	
+			title: "Laravel (LiveWire)",
+			icon: "/laravel.png",
+			percent: 0,
+		},
+		{	
+			title: "Flutter (Dart)",
+			icon: "/flutter.png",
+			percent: 0,
+		},
+		{	
+			title: "Tailwind CSS",
+			icon: "/tailwind.png",
+			percent: 0,
+		},
+		{	
+			title: "Spring[spring boot] (java) ",
+			icon: "/springBoot.png",
+			percent: 0,
+		},
+		{	
+			title: "SQL /MongoDB",
+			icon: "/bd.jpg",
+			percent: 0,
+		},
+	],
+
 	projects: [
 		{
 			title: "Bubble",
@@ -62,7 +150,7 @@ const INFO = {
 			keywords: ["Design", "AI", "Brand graphique", ],
 			screenshots: ["/pImg/bubble1.png", "/pImg/bubble2.png", "/pImg/bubble3.png", "/pImg/bubble4.png", "/pImg/bubbl.png",],
 			description:
-				"Bubble Up est une marque de boisson gazeuse américaine, initialement lancée en 1919.",
+				"Bubble est une marque de boisson gazeuse américaine, initialement lancée en 1919.",
 			logo: "/pImg/bubble0.png",
 			linkText: "View Project",
 			link: "https://github.com",

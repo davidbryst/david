@@ -26,15 +26,15 @@
 	padding: 30px;
 }
 
-.project-logo {
-	width: 100%;
-	border-radius: 15px;
-	overflow: hidden;
-}
+	.project-logo {
+		width: 100%;
+		border-radius: 15px;
+		overflow: hidden;
+	}
 
-.project-logo img {
-	width: 100%;
-}
+	.project-logo img {
+		width: 100%;
+	}
 
 .project-title {
 	font-family: var(--secondary-font);

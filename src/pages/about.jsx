@@ -10,6 +10,9 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import CircularIndicator from "../components/common/circularIndicator";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase, faPen } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
 	useEffect(() => {
@@ -47,6 +50,33 @@ const About = () => {
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description.fr}
+								</div>
+								
+								<div>
+									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faPen} /> competences graphiques</div>
+									<div className="subtitle about-subtitle">
+										{INFO.graphicSkills.map((skill) => (
+											<div className="about-skills-indicater">
+												<CircularIndicator title={skill.title} value={skill.percent} icon={skill.icon} />
+											</div>
+										))}
+									</div>
+								</div>
+
+								<div>
+									<div className="homepage-articles-header-title"><FontAwesomeIcon className="homepage-articles-header-icon" icon={faBriefcase} /> competences full-stack web et mobiles </div>
+									<div className="subtitle about-subtitle">
+										{INFO.skills.map((skill) => (
+											<div className="about-skills-indicater1">
+												{/* <CircularIndicator title={skill.title} value={skill.percent} icon={skill.icon} /> */}
+												{/* <span>{skill.percent}%</span> */}
+												<div className="about-skills-indicater1-img">
+													<img src={skill.icon} alt={skill.title} />
+												</div>
+												<span className="about-skills-indicater1-subtitle">{skill.title}</span>
+											</div>
+										))}
+									</div>
 								</div>
 							</div>
 
